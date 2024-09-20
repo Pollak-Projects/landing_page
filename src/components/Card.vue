@@ -25,7 +25,12 @@ defineProps({
   }
 
   #div::before {
-    content: 'Tovább';
+    content: '';
+    background-image: url('../assets/right-arrow-svgrepo-com.svg');
+    background-size:  180px 180px ;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(226, 78, 78);
     border-radius: 0.75rem;
     font-size: 3rem;
     align-items: center;
@@ -37,29 +42,10 @@ defineProps({
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #00000096;
+    background-color: #000000dc;
     backdrop-filter: blur(10px);
     z-index: 1;
   }
-
-  #div::after {
-    content: 'asd';
-    border-radius: 0.75rem;
-    font-size: 3rem;
-    align-items: center;
-    display: none;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #00000096;
-    backdrop-filter: blur(10px);
-    z-index: 2;
-  }
-
   #div:hover::before {
     animation: slide 1s forwards;
     display: flex;
