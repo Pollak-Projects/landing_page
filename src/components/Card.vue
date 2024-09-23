@@ -11,7 +11,7 @@ defineProps({
 
 <template>
   <div
-    class="lg:min-w-96 lg:w-1/4 h-48 lg:h-96 w-full bg-white rounded-xl border-2 border-black bg-cover cursor-pointer"
+    class="lg:min-w-96 lg:w-1/4 h-48 w-full bg-white rounded-xl border-2 border-black bg-cover cursor-pointer"
   >
     <div id="div" class="h-full w-full backdrop-blur-sm p-2 rounded-xl">
       <h1 class="text-[2rem] text-center text-white md:text-[3rem]">

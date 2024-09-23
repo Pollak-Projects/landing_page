@@ -4,7 +4,7 @@ import Card from "./components/Card.vue";
 
 <template>
   <main
-    class="min-h-screen w-screen bg-[url('./assets/fullhatter.jpg')] bg-no-repeat bg-cover p-10 overflow-y-auto"
+    class="min-h-screen w-screen bg-[url('./assets/fullhatter.jpg')] bg-no-repeat bg-cover p-10 overflow-y-auto overflow-x-hidden"
   >
     <h1 class="text-[3rem] h-[150px] flex items-center justify-center">
       Landing Page
