@@ -1,23 +1,26 @@
 <script setup>
 import { ref } from "vue";
 
-defineProps({
+const props = defineProps({
   title: String,
-  description: String,
   to: String,
   bg: String,
 });
+function nav(){
+  window.location.href = props.to
+}
 </script>
 
 <template>
   <div
     class="lg:min-w-96 lg:w-1/4 h-48 w-full bg-white rounded-xl border-2 border-black bg-cover cursor-pointer"
+    @click = "nav()"
   >
     <div id="div" class="h-full w-full backdrop-blur-sm p-2 rounded-xl">
       <h1 class="text-[2rem] text-center text-white md:text-[3rem]">
         {{ title }}
       </h1>
-      <p class="text-lg text-white text-ellipsis">{{ description }}</p>
+      
     </div>
   </div>
 </template>
