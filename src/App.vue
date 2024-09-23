@@ -6,8 +6,9 @@ import Card from "./components/Card.vue";
   <main
     class="min-h-screen w-screen bg-[url('./assets/fullhatter.jpg')] bg-no-repeat bg-cover p-10 overflow-y-auto overflow-x-hidden"
   >
+    <img src="" alt="">
     <h1 class="text-[3rem] h-[150px] flex items-center justify-center text-white font-mono  font-semibold text-7xl">
-      Landing Page
+      
     </h1>
     <div
       class="h-[calc(100%-150px)] w-full gap-5 flex flex-col justify-center items-center md:flex-row md:flex-wrap"
@@ -36,6 +37,7 @@ import Card from "./components/Card.vue";
       <Card title="Büfé" description="" to="" /> -->
     </div>
   </main>
+  <footer class="bg-slate-800 text-slate-100 fixed bottom-0 w-screen flex items-center justify-center h-7">Készítette: 12. évfolyam Szoftverfejlesztők © Copyright 2024-2025  </footer>
 </template>
 
 <style scoped></style>
