@@ -1,11 +1,16 @@
 <script setup>
 import Card from "./components/Card.vue";
+import Login from "./pages/Login.vue";
 </script>
 
 <template>
+  
   <main
     class="min-h-screen w-screen bg-[url('./assets/fullhatter.jpg')] bg-no-repeat bg-cover p-10 overflow-y-auto overflow-x-hidden"
   >
+    <!-- <div>
+    <button class="absolute top-3 right-6 bg-sky-300 w-24 h-8 rounded-2xl font-bold font-sans">Login</button>
+  </div>
     <img src="" alt="">
     <h1 class="text-[3rem] h-[150px] flex items-center justify-center text-white font-mono  font-semibold text-7xl">
       
@@ -33,9 +38,10 @@ import Card from "./components/Card.vue";
         to="https://pollakmix.hu/"
         class="bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKb6ZTMRUHc788L_9Kfzt7h6HiUV7X4-jPhQ&s)]"
       />
-      <!-- <Card title="" description="" to="" />
-      <Card title="Büfé" description="" to="" /> -->
-    </div>
+     <Card title="" description="" to="" />
+      <Card title="Büfé" description="" to="" /> 
+    </div> -->
+    <Login />
   </main>
   <footer class="bg-slate-800 text-slate-100 fixed bottom-0 w-screen flex items-center justify-center h-7">Készítette: 12. évfolyam Szoftverfejlesztők © Copyright 2024-2025  </footer>
 </template>
