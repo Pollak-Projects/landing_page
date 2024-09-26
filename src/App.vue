@@ -4,7 +4,7 @@ import { RouterView } from "vue-router";
 
 <template>
   <main
-    class="min-h-screen w-screen bg-[url('./assets/fullhatter.jpg')] bg-no-repeat bg-cover p-10 overflow-y-auto overflow-x-hidden"
+    class="min-h-screen w-screen bg-[url('./assets/UjHatter.jpg')] bg-no-repeat bg-cover p-10 overflow-y-auto overflow-x-hidden"
   >
     <RouterView />
   </main>
