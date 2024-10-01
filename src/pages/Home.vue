@@ -1,5 +1,18 @@
 <script setup>
 import Card from "../components/Card.vue";
+import { ref } from "vue";
+
+const counter = ref(3)
+
+const IntervalRef = setInterval(()=>{
+    counter.value--
+}, 1000)
+
+setTimeout(()=> {
+  clearInterval(IntervalRef)
+  counter.value = 3
+}, 3000)
+
 </script>
 <template>
   <div>
@@ -37,6 +50,7 @@ import Card from "../components/Card.vue";
       to="https://pollakmix.hu/"
       class="bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKb6ZTMRUHc788L_9Kfzt7h6HiUV7X4-jPhQ&s)]"
     />
+    {{ counter }}
   </div>
 </template>
 <style scoped></style>
