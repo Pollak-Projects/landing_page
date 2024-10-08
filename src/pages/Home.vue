@@ -2,17 +2,16 @@
 import Card from "../components/Card.vue";
 import { ref } from "vue";
 
-const counter = ref(3)
+const counter = ref(3);
 
-const IntervalRef = setInterval(()=>{
-    counter.value--
-}, 1000)
+const IntervalRef = setInterval(() => {
+  counter.value--;
+}, 1000);
 
-setTimeout(()=> {
-  clearInterval(IntervalRef)
-  counter.value = 3
-}, 3000)
-
+setTimeout(() => {
+  clearInterval(IntervalRef);
+  counter.value = 3;
+}, 3000);
 </script>
 <template>
   <div>
@@ -42,7 +41,7 @@ setTimeout(()=> {
     />
     <Card
       title="Selfie automata"
-      to=""
+      to="https://selfie.pollak.info/"
       class="bg-[url(https://www.selfieparty.hu/wp-content/uploads/selfiegep-eskuvore-1.jpg)]"
     />
     <Card
