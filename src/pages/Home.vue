@@ -49,7 +49,22 @@ setTimeout(() => {
       to="https://pollakmix.hu/"
       class="bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKb6ZTMRUHc788L_9Kfzt7h6HiUV7X4-jPhQ&s)]"
     />
-    {{ counter }}
+    <Card
+      title="PollákMerch"
+      to=""
+      class="bg-[url(https://smileycookie.com/cdn/shop/collections/shop-all-merchandise_1350x540.webp?v=1674608796)]"
+    />
+    <Card
+      title="PollákEsport"
+      to=""
+      class="bg-[url(https://www.stlouisfed.org/-/media/project/frbstl/stlouisfed/blog/2022/aug/ov/esport.jpg)]"
+    />
+    <Card
+      title="Verseny eredmények"
+      to=""
+      class="bg-[url(https://st2.depositphotos.com/1116329/6005/v/450/depositphotos_60050257-stock-illustration-vector-modern-scoreboard-black-icon.jpg)] text-black"
+    />
+    
   </div>
 </template>
 <style scoped></style>
