@@ -1,6 +1,7 @@
 <script setup>
+import { getCookie, parseJwt } from "../common/common";
 import Card from "../components/Card.vue";
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 
 const counter = ref(3);
 
@@ -12,6 +13,18 @@ setTimeout(() => {
   clearInterval(IntervalRef);
   counter.value = 3;
 }, 3000);
+
+const isAdmin = ref(false);
+
+onMounted(() => {
+  const token = getCookie("access_token");
+  const parsed = parseJwt(token);
+
+  if (parsed) {
+    console.log(parsed);
+    isAdmin.value = parsed.userGroup === "ADMIN";
+  }
+});
 </script>
 <template>
   <div>
@@ -38,6 +51,13 @@ setTimeout(() => {
       title="Büfé"
       to="https://pollakbufe.hu/"
       class="bg-[url(https://pollakbufe.hu/public/Images/bufe.jpg)]"
+      v-if="!isAdmin"
+    />
+    <Card
+      title="Büfé"
+      to="https://bufe.pollak.info"
+      class="bg-[url(https://pollakbufe.hu/public/Images/bufe.jpg)]"
+      v-if="isAdmin"
     />
     <Card
       title="Selfie automata"
@@ -64,7 +84,6 @@ setTimeout(() => {
       to=""
       class="bg-[url(https://st2.depositphotos.com/1116329/6005/v/450/depositphotos_60050257-stock-illustration-vector-modern-scoreboard-black-icon.jpg)] text-black"
     /> -->
-    
   </div>
 </template>
 <style scoped></style>
