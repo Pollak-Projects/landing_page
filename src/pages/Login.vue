@@ -25,6 +25,7 @@ function login() {
       username: form.value.username,
       password: form.value.password,
     }),
+    credentials: "include",
   }).then(async (res) => {
     const data = await res.json();
     console.log(data);
