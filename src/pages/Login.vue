@@ -25,7 +25,9 @@ function login() {
       username: form.value.username,
       password: form.value.password,
     }),
-  }).then((res) => {
+  }).then(async (res) => {
+    const data = await res.json();
+    console.log(data);
     const cookie = getCookie("access_token");
 
     if (cookie) {
