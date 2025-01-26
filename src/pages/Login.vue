@@ -21,10 +21,10 @@ function login() {
     headers: {
       "Content-Type": "application/json",
     },
-    body: {
+    body: JSON.stringify({
       username: form.value.username,
       password: form.value.password,
-    },
+    }),
   }).then((res) => {
     const cookie = getCookie("access_token");
 
