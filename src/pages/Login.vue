@@ -15,15 +15,16 @@ const error = ref("");
 const router = useRouter();
 
 function login() {
+  console.log(form.username, form.password);
   fetch("https://auth.pollak.info/auth/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
+    body: {
       username: form.username,
       password: form.password,
-    }),
+    },
   }).then((res) => {
     const cookie = getCookie("access_token");
 
